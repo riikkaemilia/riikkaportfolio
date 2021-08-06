@@ -10,23 +10,13 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<header class="entry-header">
-		<?php
-		if ( is_singular() ) :
-			the_title( '<h1 class="entry-title">', '</h1>' );
-		else :
-			the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
-		endif;
-
-		 ?>
-	</header><!-- .entry-header -->
-
-	<?php riikkaportfolio_post_thumbnail(); ?>
 
 		<?php
 		if ( is_singular() ) : ?>
 		<div class="entry-content__projectpage">
 		<?php
+			the_title( '<h1 class="entry-title">', '</h1>' );
+
 			the_content(
 				sprintf(
 					wp_kses(
@@ -46,6 +36,11 @@
 		else : ?>
 			<div class="entry-content__frontpage">
 			<?php 
+			the_title( '<h2 class="entry-content__title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
+			the_post_thumbnail('full', array('class' => 'entry-content__thumbnail'));  ?>
+
+			<div class="entry-content__excerpt">
+			<?php 
 			the_excerpt(
 				sprintf(
 					wp_kses(
@@ -60,6 +55,7 @@
 					wp_kses_post( get_the_title() )
 				)
 			); ?>
+			</div><!-- .entry-content__excerpt -->
 			</div><!-- .entry-content__frontpage -->
 			<?php
 		endif;

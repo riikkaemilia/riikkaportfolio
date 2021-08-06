@@ -72,7 +72,6 @@ html {
  */
 body {
   margin: 0;
-  padding: 1rem;
 }
 
 /**
@@ -394,8 +393,8 @@ input,
 select,
 optgroup,
 textarea {
-  color: #404040;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  color: #1c1824;
+  font-family: "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
   font-size: 1rem;
   line-height: 1.5;
 }
@@ -406,11 +405,35 @@ h3,
 h4,
 h5,
 h6 {
+  font-family: "Spectral", serif;
+  font-weight: 400;
   clear: both;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+@media (min-width: 64em) {
+  h1 {
+    font-size: 4rem;
+  }
+}
+
+h2 {
+  font-size: 1.5rem;
 }
 
 p {
   margin-bottom: 1.5em;
+  font-size: 1.125rem;
+  font-weight: 400;
+}
+
+@media (min-width: 64em) {
+  p {
+    font-size: 1.5rem;
+  }
 }
 
 dfn,
@@ -525,15 +548,15 @@ table {
 /* Links
 --------------------------------------------- */
 a {
-  color: #4169e1;
+  color: #1c1824;
 }
 
 a:visited {
-  color: #800080;
+  color: #1c1824;
 }
 
 a:hover, a:focus, a:active {
-  color: #191970;
+  color: #1c1824;
 }
 
 a:focus {
@@ -734,6 +757,16 @@ textarea {
 
 /* Posts and pages
 --------------------------------------------- */
+body {
+  padding: 1rem;
+}
+
+@media (min-width: 64em) {
+  body {
+    padding: 3rem 8rem;
+  }
+}
+
 .sticky {
   display: block;
 }
@@ -756,6 +789,32 @@ textarea {
 .page-links {
   clear: both;
   margin: 0 0 1.5em;
+}
+
+.intro {
+  border-top: 1px solid #1c1824;
+}
+
+@media (min-width: 64em) {
+  .intro {
+    padding: 10rem 0;
+  }
+}
+
+@media (min-width: 64em) {
+  .intro__biotext {
+    width: 60%;
+  }
+}
+
+.entry-content__frontpage {
+  border-top: 1px solid #1c1824;
+}
+
+.entry-content__thumbnail {
+  width: 100%;
+  max-width: 650px;
+  height: auto;
 }
 
 /* Comments

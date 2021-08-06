@@ -1,23 +1,65 @@
+body {
+  padding: 1rem;
+
+  @include breakpoint-up(large) {
+    padding: 3rem 8rem;
+  }
+}
+
 .sticky {
-	display: block;
+  display: block;
 }
 
 .post,
 .page {
-	margin: 0 0 1.5em;
+  margin: 0 0 1.5em;
 }
 
 .updated:not(.published) {
-	display: none;
+  display: none;
 }
 
 .page-content,
 .entry-content,
 .entry-summary {
-	margin: 1.5em 0 0;
+  margin: 1.5em 0 0;
 }
 
 .page-links {
-	clear: both;
-	margin: 0 0 1.5em;
+  clear: both;
+  margin: 0 0 1.5em;
+}
+
+// Frontpage intro
+.intro {
+  border-top: 1px solid $color__text-main;
+
+  @include breakpoint-up(large) {
+    padding: 10rem 0;
+  }
+
+  &__headline {
+  }
+  &__biotext {
+    @include breakpoint-up(large) {
+      width: 60%;
+    }
+  }
+}
+
+// Portfolio entries
+
+.entry-content {
+  &__frontpage {
+    border-top: 1px solid $color__text-main;
+  }
+  &__title {
+  }
+  &__thumbnail {
+    width: 100%;
+    max-width: 650px;
+    height: auto;
+  }
+  &__excerpt {
+  }
 }

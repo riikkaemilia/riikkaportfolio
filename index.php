@@ -16,9 +16,13 @@ get_header();
 ?>
 
 	<main id="primary" class="site-main">
-	<h1>Riikka Sutinen</h1>
-	<p>I am a designer who is inspired by calm, ethical and human-centered solutions. I have a background in art and a side interest in front-end development. Currently I am finishing my digital design studies at Metropolia and looking for work opportunities.</p>
-	<p>Read more about me or scroll down to see some of my work!</p>
+	<div class="intro">
+		<h1 class="intro__headline">Riikka Sutinen</h1>
+		<div class="intro__biotext">
+		<p>I am a designer who is inspired by calm, ethical and human-centered solutions. I have a background in art and a side interest in front-end development. Currently I am finishing my digital design studies at Metropolia and looking for work opportunities.</p>
+		<p>Read more about me or scroll down to see some of my work!</p>
+		</div>
+	</div>
 
 		<?php
 		if ( have_posts() ) :
