@@ -105,6 +105,10 @@ body {
   }
 }
 
+.entry-title {
+  text-align: center;
+}
+
 .portfolio {
   border-top: 1px solid $color__text-main;
   padding: 3.5rem 0;
@@ -139,10 +143,6 @@ body {
     padding: 1rem;
     box-shadow: 2px 2px $color__darkgreen;
 
-    a {
-      text-decoration: none;
-    }
-
     p {
       margin: 0;
     }
@@ -156,26 +156,68 @@ body {
   &__lastimage {
     padding-bottom: 3.5rem;
   }
+
+  &__marginbottom {
+    margin-bottom: 3.5rem;
+  }
+
+  &__margintop {
+    margin-top: 3.5rem;
+  }
+
+  &__illustration {
+    padding: 5rem 0;
+  }
+
+  &__quote {
+    margin-top: 3.5rem !important;
+    padding-left: 1rem;
+    border-left: 1px solid $color__text-main;
+  }
 }
 
 .footer {
+  border-top: 1px solid $color__text-main;
+  padding: 3.5rem 0;
+
   &__wrapper {
     display: flex;
     flex-direction: column;
 
     @include breakpoint-up(large) {
       flex-direction: row;
-      padding: 10rem 0;
     }
   }
 
   &__links {
     flex-basis: 100%;
+
+    @include breakpoint-up(large) {
+      align-self: flex-end;
+    }
   }
 
   &__linkedin {
     display: block;
     max-width: 4rem;
     margin: 0 auto;
+  }
+}
+
+.crazybutton {
+  width: fit-content;
+  background-color: #141415;
+  color: #fff;
+  padding: 14px 25px;
+  text-decoration: none;
+  transition: 0.75s;
+  margin: 0 auto;
+  margin-bottom: 3.5rem;
+
+  &:hover,
+  &:active {
+    background-color: hsl(260, 100%, 50%);
+    box-shadow: 0.5em 0.5em hsl(200, 100%, 60%), 1em 1em hsl(160, 100%, 70%);
+    transition: 0.75s;
   }
 }

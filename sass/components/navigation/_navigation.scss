@@ -67,7 +67,7 @@
   .current-menu-item > a,
   .current_page_ancestor > a,
   .current-menu-ancestor > a {
-    border-bottom: 3px solid #737144;
+    border-bottom: 3px solid $color__darkgreen;
   }
 }
 
@@ -96,6 +96,7 @@
 
   .nav-links {
     display: flex;
+    padding-bottom: 3.5rem;
   }
 
   .nav-previous {

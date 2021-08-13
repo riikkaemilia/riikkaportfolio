@@ -60,9 +60,10 @@
 				); ?>
 				</div><!-- .entry-content__excerpt -->
 				<div class="entry-content__readmore">
-					<div class="portfolio__linkbutton">
-				   		<a href="<?php esc_url( the_permalink() ) ?>" rel="bookmark"><p>Read more</p></a>
-					</div>
+				   		<a href="<?php esc_url( the_permalink() ) ?>" rel="bookmark" class="textdecorationoff">
+						   <div class="portfolio__linkbutton">
+							   <p>Read more</p>
+					</div></a>
 				</div> <!-- .entry-content__readmore -->
 			</div><!-- .entry-content__frontpage -->
 			<?php
@@ -75,5 +76,6 @@
 			)
 		);
 		?>
+		
 
 </article><!-- #post-<?php the_ID(); ?> -->

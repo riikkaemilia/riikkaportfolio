@@ -460,7 +460,7 @@ h2 {
 p {
   margin-top: 1rem;
   margin-bottom: 1.5rem;
-  font-size: 1.125rem;
+  font-size: 1rem;
   font-weight: 400;
 }
 
@@ -606,6 +606,10 @@ a:focus {
 
 a:hover, a:active {
   outline: 0;
+}
+
+a.textdecorationoff {
+  text-decoration: none;
 }
 
 /* Forms
@@ -790,6 +794,7 @@ textarea {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding-bottom: 3.5rem;
 }
 
 .comment-navigation .nav-previous,
@@ -922,6 +927,10 @@ body {
   }
 }
 
+.entry-title {
+  text-align: center;
+}
+
 .portfolio {
   border-top: 1px solid #1c1824;
   padding: 3.5rem 0;
@@ -960,10 +969,6 @@ body {
           box-shadow: 2px 2px #737144;
 }
 
-.portfolio__linkbutton a {
-  text-decoration: none;
-}
-
 .portfolio__linkbutton p {
   margin: 0;
 }
@@ -975,6 +980,29 @@ body {
 
 .portfolio__lastimage {
   padding-bottom: 3.5rem;
+}
+
+.portfolio__marginbottom {
+  margin-bottom: 3.5rem;
+}
+
+.portfolio__margintop {
+  margin-top: 3.5rem;
+}
+
+.portfolio__illustration {
+  padding: 5rem 0;
+}
+
+.portfolio__quote {
+  margin-top: 3.5rem !important;
+  padding-left: 1rem;
+  border-left: 1px solid #1c1824;
+}
+
+.footer {
+  border-top: 1px solid #1c1824;
+  padding: 3.5rem 0;
 }
 
 .footer__wrapper {
@@ -993,7 +1021,6 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    padding: 10rem 0;
   }
 }
 
@@ -1002,10 +1029,39 @@ body {
       flex-basis: 100%;
 }
 
+@media (min-width: 64em) {
+  .footer__links {
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+  }
+}
+
 .footer__linkedin {
   display: block;
   max-width: 4rem;
   margin: 0 auto;
+}
+
+.crazybutton {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  background-color: #141415;
+  color: #fff;
+  padding: 14px 25px;
+  text-decoration: none;
+  -webkit-transition: 0.75s;
+  transition: 0.75s;
+  margin: 0 auto;
+  margin-bottom: 3.5rem;
+}
+
+.crazybutton:hover, .crazybutton:active {
+  background-color: #5500ff;
+  -webkit-box-shadow: 0.5em 0.5em #33bbff, 1em 1em #66ffcc;
+          box-shadow: 0.5em 0.5em #33bbff, 1em 1em #66ffcc;
+  -webkit-transition: 0.75s;
+  transition: 0.75s;
 }
 
 /* Comments

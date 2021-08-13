@@ -12,7 +12,7 @@
 ?>
 
 	<footer id="colophon" class="site-footer">
-		<div class="portfolio site-info">
+		<div class="footer site-info">
 			<div class="footer__wrapper portfolio__text">
 				<div class="footer__links">
 					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><p>Works</p></a>
