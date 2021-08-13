@@ -140,7 +140,7 @@ add_action( 'widgets_init', 'riikkaportfolio_widgets_init' );
  * Enqueue scripts and styles.
  */
 function riikkaportfolio_scripts() {
-	wp_enqueue_style( 'wpb-google-fonts', 'https://fonts.googleapis.com/css2?family=Lato&family=Spectral&display=swap', array(), null );
+	wp_enqueue_style( 'wpb-google-fonts', 'https://fonts.googleapis.com/css2?family=Lato&family=Spectral&family=Eczar&family=Libre+Franklin:wght@400;600&display=swap', array(), null );
 	wp_enqueue_style( 'riikkaportfolio-style', get_template_directory_uri().'/sass/style.css', array(), _S_VERSION );
 	wp_style_add_data( 'riikkaportfolio-style', 'rtl', 'replace' );
 

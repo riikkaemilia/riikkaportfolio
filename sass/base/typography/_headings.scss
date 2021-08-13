@@ -1,6 +1,5 @@
 h1,
 h2,
-h3,
 h4,
 h5,
 h6 {
@@ -9,8 +8,24 @@ h6 {
   clear: both;
 }
 
+h3 {
+  font-family: $font__main;
+  font-weight: 600;
+  @include breakpoint-up(large) {
+    font-size: 1.375rem;
+  }
+}
+
 h1 {
   font-size: 3rem;
+
+  &.entry-title {
+    font-size: 1.5rem;
+
+    @include breakpoint-up(large) {
+      font-size: 4rem;
+    }
+  }
 
   @include breakpoint-up(large) {
     font-size: 4rem;
@@ -19,4 +34,20 @@ h1 {
 
 h2 {
   font-size: 1.5rem;
+
+  &.less-margin {
+    margin-bottom: 0.25rem;
+  }
+
+  @include breakpoint-up(large) {
+    font-size: 3rem;
+  }
+}
+
+.single {
+  @include breakpoint-up(large) {
+    h2 {
+      font-size: 2rem;
+    }
+  }
 }
