@@ -40,7 +40,8 @@ h2 {
   }
 }
 
-.single {
+.single,
+.page {
   @include breakpoint-up(large) {
     h2 {
       font-size: 2rem;

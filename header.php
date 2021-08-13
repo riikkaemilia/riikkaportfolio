@@ -27,16 +27,10 @@
 	<header id="masthead" class="site-header">
 		<div class="site-branding">
 		<?php
-			the_custom_logo();
-			if ( is_singular() ) :
-				?>
-				<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
-				<?php
-			endif; ?>
+			the_custom_logo(); ?>
 		</div><!-- .site-branding -->
 
 		<nav id="site-navigation" class="main-navigation">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'riikkaportfolio' ); ?></button>
 			<?php
 			wp_nav_menu(
 				array(

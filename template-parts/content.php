@@ -40,7 +40,7 @@
 				the_title( '<h2 class="entry-content__title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
 				
 				//  project thumbnail
-				the_post_thumbnail('full', array('class' => 'entry-content__thumbnail'));  ?>
+				?> <?php the_post_thumbnail('full', array('class' => 'entry-content__thumbnail'));  ?>
 
 				<div class="entry-content__excerpt">
 				<?php 
@@ -60,7 +60,9 @@
 				); ?>
 				</div><!-- .entry-content__excerpt -->
 				<div class="entry-content__readmore">
-				   <a href="<?php esc_url( the_permalink() ) ?>" rel="bookmark"><p>Read more</p></a>
+					<div class="portfolio__linkbutton">
+				   		<a href="<?php esc_url( the_permalink() ) ?>" rel="bookmark"><p>Read more</p></a>
+					</div>
 				</div> <!-- .entry-content__readmore -->
 			</div><!-- .entry-content__frontpage -->
 			<?php

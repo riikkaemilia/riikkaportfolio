@@ -12,12 +12,17 @@
 ?>
 
 	<footer id="colophon" class="site-footer">
-		<div class="site-info">
-			About
-			Works
-			Contact
-			E-mail
-			LinkedIn
+		<div class="portfolio site-info">
+			<div class="footer__wrapper portfolio__text">
+				<div class="footer__links">
+					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><p>Works</p></a>
+					<a href="<?php echo esc_url( home_url( '/about' ) ); ?>"><p>About</p></a>
+				</div>
+				<div class="footer__contact">
+					<p>riikka.e.sutinen@gmail.com</p>
+					<a href="https://www.linkedin.com/in/riikka-sutinen/" target="_blank"><img class="footer__linkedin" src="http://localhost:8888/wp-content/uploads/2021/08/linkedin.png"></a>
+				</div>
+			</div>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->

@@ -101,7 +101,6 @@ body {
   &__readmore {
     @include breakpoint-up(large) {
       grid-column: 2 / 3;
-      // order: 3;
     }
   }
 }
@@ -138,6 +137,7 @@ body {
     margin: 0 auto;
     margin-top: 3.5rem;
     padding: 1rem;
+    box-shadow: 2px 2px $color__darkgreen;
 
     a {
       text-decoration: none;
@@ -155,5 +155,27 @@ body {
 
   &__lastimage {
     padding-bottom: 3.5rem;
+  }
+}
+
+.footer {
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+
+    @include breakpoint-up(large) {
+      flex-direction: row;
+      padding: 10rem 0;
+    }
+  }
+
+  &__links {
+    flex-basis: 100%;
+  }
+
+  &__linkedin {
+    display: block;
+    max-width: 4rem;
+    margin: 0 auto;
   }
 }
