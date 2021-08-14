@@ -20,7 +20,7 @@
 				</div>
 				<div class="footer__contact">
 					<p>riikka.e.sutinen@gmail.com</p>
-					<a href="https://www.linkedin.com/in/riikka-sutinen/" target="_blank"><img class="footer__linkedin" src="http://localhost:8888/wp-content/uploads/2021/08/linkedin.png"></a>
+					<a href="https://www.linkedin.com/in/riikka-sutinen/" target="_blank"><img class="footer__linkedin" src="<?php echo esc_url( home_url( '/' ) ); ?>wp-content/uploads/2021/08/linkedin.png"></a>
 				</div>
 			</div>
 		</div><!-- .site-info -->
