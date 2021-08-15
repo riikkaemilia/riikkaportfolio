@@ -15,7 +15,7 @@
 		<div class="footer site-info">
 			<div class="footer__wrapper portfolio__text">
 				<div class="footer__links">
-					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><p>Works</p></a>
+					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><p>Home</p></a>
 					<a href="<?php echo esc_url( home_url( '/about' ) ); ?>"><p>About</p></a>
 				</div>
 				<div class="footer__contact">

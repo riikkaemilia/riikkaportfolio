@@ -8,7 +8,6 @@
  */
 
 ?>
-
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
 		<?php
@@ -40,8 +39,8 @@
 				the_title( '<h2 class="entry-content__title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
 				
 				//  project thumbnail
-				?> <?php the_post_thumbnail('full', array('class' => 'entry-content__thumbnail'));  ?>
-
+				?> 	<?php the_post_thumbnail('full', array('class' => 'entry-content__thumbnail'));  ?>
+				
 				<div class="entry-content__excerpt">
 				<?php 
 				the_excerpt(
