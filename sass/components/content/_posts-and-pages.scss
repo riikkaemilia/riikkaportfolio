@@ -114,6 +114,14 @@ body {
   border-top: 1px solid $color__text-main;
   padding: 3.5rem 0;
 
+  &__headimage {
+    margin-bottom: 2rem;
+
+    @include breakpoint-up(large) {
+      margin-bottom: 3.5rem;
+    }
+  }
+
   &__beforeimage {
     padding-bottom: 0;
   }
