@@ -140,6 +140,7 @@
     @include breakpoint-up(medium) {
       display: inline;
       width: 70%;
+      padding-top: 1rem;
     }
   }
 }
