@@ -445,15 +445,9 @@ h2 {
   font-size: 1.5rem;
 }
 
-@media (min-width: 40em) {
-  h2 {
-    font-size: 2rem;
-  }
-}
-
 @media (min-width: 64em) {
   h2 {
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
 }
 
@@ -950,13 +944,6 @@ body {
   }
 }
 
-.entry-content__mastergrid {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr;
-      grid-template-columns: 1fr;
-}
-
 .entry-content__frontpage {
   padding: 4rem 0;
   border-top: 1px solid #1c1824;
@@ -974,6 +961,10 @@ body {
   }
 }
 
+.entry-content__title {
+  margin-top: 0;
+}
+
 .entry-content__title a {
   text-decoration: none;
 }
@@ -989,7 +980,7 @@ body {
   }
 }
 
-.entry-content__thumbnail {
+.entry-content__thumbnail img {
   width: 100%;
   max-width: 36.45rem;
   height: auto;

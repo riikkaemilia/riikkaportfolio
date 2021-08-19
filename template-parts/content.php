@@ -41,7 +41,7 @@
 				//  project thumbnail
 				?> 	
 				<div class="entry-content__thumbnail">
-					<a href="#">
+					<a href="<?php esc_url( the_permalink() ) ?>">
 						<?php the_post_thumbnail('full');  ?>
 					</a>
 				</div>
