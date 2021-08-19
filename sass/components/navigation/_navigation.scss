@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 .main-navigation {
   display: block;
   width: 100%;
@@ -142,5 +146,22 @@
       width: 70%;
       padding-top: 1rem;
     }
+  }
+}
+
+.totop {
+  text-align: center;
+  font-size: 1.5rem;
+
+  @include breakpoint-up(medium) {
+    font-size: 2rem;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  &__arrow {
+    padding: 1rem;
   }
 }

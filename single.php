@@ -26,8 +26,13 @@ get_header();
 
 //	Previous/next post navigation.
 			?>
+			<div class="totop">
+				<a href="#top">
+				<span class="totop__arrow">&#8593;</span>
+				</a>
+			</div>
 
-			<div class="nav-links">
+		<div class="nav-links">
 			<?php $prevPost = get_next_post(true);
 				if($prevPost) {
 					$args = array(
@@ -66,7 +71,7 @@ get_header();
 					} //end foreach
 				} // end if
 			?>
-		</div>
+		</div> <!-- .nav-links -->
 <?php
 
 	//  ** Underscores post navigation ** //

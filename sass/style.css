@@ -714,6 +714,10 @@ textarea {
 --------------------------------------------------------------*/
 /* Navigation
 --------------------------------------------- */
+html {
+  scroll-behavior: smooth;
+}
+
 .main-navigation {
   display: block;
   width: 100%;
@@ -867,6 +871,25 @@ textarea {
   }
 }
 
+.totop {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+@media (min-width: 40em) {
+  .totop {
+    font-size: 2rem;
+  }
+}
+
+.totop a {
+  text-decoration: none;
+}
+
+.totop__arrow {
+  padding: 1rem;
+}
+
 /* Posts and pages
 --------------------------------------------- */
 body {
@@ -925,6 +948,13 @@ body {
   .intro__biotext {
     width: 60%;
   }
+}
+
+.entry-content__mastergrid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
 }
 
 .entry-content__frontpage {
@@ -1001,16 +1031,6 @@ body {
   padding: 3.5rem 0;
 }
 
-.portfolio__headimage {
-  margin-bottom: 2rem;
-}
-
-@media (min-width: 64em) {
-  .portfolio__headimage {
-    margin-bottom: 3.5rem;
-  }
-}
-
 .portfolio__beforeimage {
   padding-bottom: 0;
 }
@@ -1053,9 +1073,29 @@ body {
   margin: 0;
 }
 
+.portfolio__image {
+  max-width: 93.75rem;
+  margin: 0 auto;
+}
+
+.portfolio__headimage {
+  margin-bottom: 2rem;
+}
+
+@media (min-width: 64em) {
+  .portfolio__headimage {
+    margin-bottom: 3.5rem;
+  }
+}
+
 .portfolio__imagenarrow {
   max-width: 36.5rem;
-  margin: 0 auto;
+}
+
+@media (min-width: 64em) {
+  .portfolio__imagemediumwidth {
+    padding: 0 6.25rem;
+  }
 }
 
 .portfolio__lastimage {
@@ -1071,6 +1111,7 @@ body {
 }
 
 .portfolio__illustration {
+  max-width: 49em;
   padding: 5rem 0;
 }
 
@@ -1087,6 +1128,13 @@ body {
 .portfolio__prototesting {
   display: block;
   margin: 0 auto;
+  padding: 0 0.75rem;
+}
+
+@media (min-width: 40em) {
+  .portfolio__prototesting {
+    padding: 0;
+  }
 }
 
 .footer {
@@ -1132,10 +1180,28 @@ body {
   }
 }
 
-.footer__linkedin {
+.footer__socialicons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 1rem;
+}
+
+.footer__icon {
   display: block;
-  max-width: 4rem;
+  max-width: 2.5rem;
   margin: 0 auto;
+}
+
+.footer #linkedin {
+  max-width: 2.1rem;
 }
 
 .crazybutton {
