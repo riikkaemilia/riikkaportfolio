@@ -22,6 +22,7 @@
 					<p>riikka.e.sutinen@gmail.com</p>
 						<div class="footer__socialicons">
 						<a href="https://www.linkedin.com/in/riikka-sutinen/" target="_blank"><img class="footer__icon" id="linkedin" src="<?php echo esc_url( home_url( '/' ) ); ?>wp-content/uploads/2021/08/linkedin2.png"></a>
+						<a href="https://github.com/riikkaemilia" target="_blank"><img class="footer__icon" id="github" src="<?php echo esc_url( home_url( '/' ) ); ?>wp-content/uploads/2021/08/GitHub.png"></a>
 						<a href="https://www.behance.net/riikkaemiliasutinen" target="_blank"><img class="footer__icon" src="<?php echo esc_url( home_url( '/' ) ); ?>wp-content/uploads/2021/08/behance-64.png"></a>
 						</div>
 				</div>
