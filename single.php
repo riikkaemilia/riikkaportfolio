@@ -33,7 +33,7 @@ get_header();
 			</div>
 
 		<div class="nav-links">
-			<?php $prevPost = get_next_post(true);
+			<?php $prevPost = get_next_post(false);
 				if($prevPost) {
 					$args = array(
 						'posts_per_page' => 1,
@@ -52,7 +52,7 @@ get_header();
 					} //end foreach
 				} // end if
 				 
-				$nextPost = get_previous_post(true);
+				$nextPost = get_previous_post(false);
 				if($nextPost) {
 					$args = array(
 						'posts_per_page' => 1,

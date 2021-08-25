@@ -19,7 +19,7 @@ get_header();
 	<div class="intro">
 		<h1 class="intro__headline">Riikka Sutinen</h1>
 		<div class="intro__biotext">
-		<p>I am a designer who is inspired by calm and human-centered solutions. I have a background in art and a side interest in front-end development. Currently I am finishing my digital design studies at Metropolia and looking for work opportunities.</p>
+		<p>I am a UX designer who is inspired by calm and human-centered solutions. I have a background in art and a side interest in front-end development. Currently I am finishing my digital design studies at Metropolia and looking for work opportunities.</p>
 		<p><a href="<?php echo esc_url( home_url( '/about' ) ); ?>">Read more about me</a> or scroll down to see some of my work!</p>
 		</div>
 	</div>

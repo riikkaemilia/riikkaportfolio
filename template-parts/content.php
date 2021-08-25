@@ -37,15 +37,24 @@
 				<?php 
 				//  project title
 				the_title( '<h2 class="entry-content__title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
-				
-				//  project thumbnail
 				?> 	
+
+				<!--  project categories -->
+				<ul class="entry-content__categories">
+				<?php
+				foreach (get_the_category() as $category){
+					echo "<li>";
+					echo $category->name;
+					echo "</li>";
+				} ?>
+				</ul>
+
+				<!--  project thumbnail -->
 				<div class="entry-content__thumbnail">
 					<a href="<?php esc_url( the_permalink() ) ?>">
 						<?php the_post_thumbnail('full');  ?>
 					</a>
 				</div>
-				
 				
 				<div class="entry-content__excerpt">
 				<?php 
